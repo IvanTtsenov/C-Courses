@@ -1,0 +1,31 @@
+Задача 1:
+
+1.Създаване на празната директория day1 и празните файлове test1, test2, test3
+mkdir day1
+touch day1/test1 day1/test2 day1/test3
+
+2.Сложете текстовете в съответните файлове
+echo "Hello Bash" > day1/test1
+date > day1/test2
+pwd > day1/test3
+
+3.Създайте директорията testDir в day1 и копирайте файловете test1, test2, test3 в нея
+mkdir day1/testDir
+cp day1/test1 day1/test2 day1/test3 day1/testDir
+
+4.Създайте директорията testNested в testDir и копирайте файловете test1, test2 в нея
+mkdir day1/testDir/testNested
+cp day1/testDir/test1 day1/testDir/test2 day1/testDir/testNested
+
+5.Изтрийте файловете test1,test2,test3 от директорията day1
+rm day1/test1 day1/test2 day1/test3
+
+6.Копирайте цялото съдържание на директорията testDir в новата директория testDirCopy
+mkdir day1/testDirCopy
+cp -r day1/testDir/* day1/testDirCopy
+
+7.Изтрийте файла test1 от директорията testDir
+rm day1/testDir/test1
+
+8.Изтрийте цялото съдържание на директорията testDirCopy
+rm -r day1/testDirCopy/*
