@@ -1,0 +1,14 @@
+1.Препроцесор
+g++ -E program.cpp -o program.i
+g++ -E swap.cpp -o swap.i
+
+2.Компилация
+g++ -S program.i -o program.s
+g++ -S swap.i -o swap.s
+
+3.Асемблиране
+g++ -c program.s -o program.o
+g++ -c swap.s -o swap.o
+
+4.Линкиране
+g++ program.o swap.o -o program
